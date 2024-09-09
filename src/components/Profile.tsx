@@ -10,4 +10,4 @@ export default function Profile(){
         </div>
     }
     return <div>From Client: User is NOT signed in</div>
-}
+} 
