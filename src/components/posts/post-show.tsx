@@ -7,6 +7,9 @@ interface PostShowProps {
 }
 
 export default async function PostShow({postId}: PostShowProps) {
+  // Esto retarda cuanto tarda la pagina en cargar
+  await new Promise(resolve => setTimeout(resolve, 2500));
+
   const post = await db.post.findFirst({
     where: {id: postId}
   });
